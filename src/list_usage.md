@@ -61,7 +61,7 @@ What happens when there is no element to remove?
     l = ['mark', 'marcus', 'catherine', 'emma', 'mark', 'jason']
     l.remove('xavier')
 
-This results ValueError
+This raises a ValueError
 
     ValueError          Traceback (most recent call last)
     <ipython-input-16-6655acfa2bb3> in <module>
@@ -75,7 +75,7 @@ This results ValueError
     # 'catherine' -> this is the value returned
     # l is now ['mark', 'marcus', 'emma', 'mark', 'jason']
 
-**reverse()** reverses the list.
+**reverse()** reverses the list ***IN PLACE***. This means the original list will be modified.
 
     l = list(range(1, 11))
     l.reverse()
